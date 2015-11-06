@@ -4,16 +4,24 @@
   "description": "Node program to maintain smoker temp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "start": "node index.js"
   },
   "author": "Jared Johnson",
   "license": "ISC",
   "dependencies": {
+    "babel": "^6.0.15",
+    "bluebird": "^3.0.5",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
+    "fs.promised": "^2.2.1",
+    "get-global": "0.0.1",
     "mathjs": "^2.4.1",
     "socket.io": "^1.3.7",
     "spi": "^0.2.0"
   },
-  "devDependencies": {}
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
 }
